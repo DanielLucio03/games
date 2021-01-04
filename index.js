@@ -18,7 +18,7 @@ function rollDice(){
     document.querySelector("h1").textContent = "Try lang ng Try!!!";
 
       var y = document.querySelector("#life").getAttribute("value");
-      alert(y);
+
       if (y <= 0){
           document.querySelector("h1").textContent = "wala ka ng buhay Shunga";
           document.querySelector("#buhay").style.visibility = "hidden";
