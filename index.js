@@ -8,10 +8,10 @@ function rollDice(){
   document.querySelector(".img2").setAttribute("src", "images/dice" + randomNumberTwo + ".png");
 
   if (randomNumberOne > randomNumberTwo){
-    document.querySelector("h1").textContent = "Player One Wins!!!"
+    document.querySelector("h1").textContent = "❤❤❤ Player One Wins!!!"
   }
   else if(randomNumberOne < randomNumberTwo){
-    document.querySelector("h1").textContent = "Player Two Wins!!!"
+    document.querySelector("h1").textContent = "Player Two Wins!!! ❤❤❤"
   }
   else{
     document.querySelector("h1").textContent = "Refresh Again!!!"
