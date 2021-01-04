@@ -59,6 +59,7 @@ footer {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  margin: auto 5%;
 }
 
 .btn:hover {
@@ -69,4 +70,12 @@ footer {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+label{
+  font-size: 2rem;
+  color: white;
+  font-family: monospace, sans-serif;
+}
+input{
+  font-size: 2rem;
 }
