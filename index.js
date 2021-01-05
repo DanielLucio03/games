@@ -1,38 +1,38 @@
-function rollDice(){
+var allButtons = document.querySelectorAll(".set button");
 
+for (var i = 0; i < allButtons.length; i++) {
+  document.querySelectorAll(".set button")[i].addEventListener("click", function(){
 
-    var randomNumberOne = Math.ceil(Math.random() * 3);
-    var randomNumberTwo = Math.ceil(Math.random() * 3);
-    var randomNumberThree = Math.ceil(Math.random() * 3);
-
-  document.querySelector(".img1").setAttribute("src", "images/dice" + randomNumberOne + ".png");
-  document.querySelector(".img2").setAttribute("src", "images/dice" + randomNumberTwo + ".png");
-  document.querySelector(".img3").setAttribute("src", "images/dice" + randomNumberThree + ".png");
-
-
-  if (randomNumberOne === randomNumberTwo && randomNumberTwo === randomNumberThree){
-    document.querySelector("h1").textContent = "Hulyo Manlaban Kana"
-  }
-
-  else{
-    document.querySelector("h1").textContent = "Try lang ng Try!!!";
-
-      var y = document.querySelector("#life").getAttribute("value");
-
-      if (y <= 0){
-          document.querySelector("h1").textContent = "wala ka ng buhay Shunga";
-          document.querySelector("#buhay").style.visibility = "hidden";
-
-      }
-      else{
-      document.querySelector("#life").setAttribute("value", y - 1);
+    if (this.innerHTML === "w"){
+      var audio = new Audio("sounds/crash.mp3");
+      audio.play();
+    }
+    else if (this.innerHTML === "a"){
+      var audio = new Audio("sounds/kick-bass.mp3");
+      audio.play();
+    }
+    else if (this.innerHTML === "s"){
+      var audio = new Audio("sounds/snare.mp3");
+      audio.play();
+    }
+    else if (this.innerHTML === "d"){
+      var audio = new Audio("sounds/tom-1.mp3");
+      audio.play();
+    }
+    else if (this.innerHTML === "j"){
+      var audio = new Audio("sounds/tom-2.mp3");
+      audio.play();
+    }
+    else if (this.innerHTML === "k"){
+      var audio = new Audio("sounds/tom-3.mp3");
+      audio.play();
+    }
+    else if (this.innerHTML === "l"){
+      var audio = new Audio("sounds/tom-4.mp3");
+      audio.play();
     }
 
-  }
 
-}
-function reset(){
 
-  document.querySelector("#buhay").style.visibility = "visible";
-  document.querySelector("#life").setAttribute("value", 5);
+  });
 }
